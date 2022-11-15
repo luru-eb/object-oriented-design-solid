@@ -15,9 +15,9 @@ class TestPosition:
         assert kilometers == 360.4235510029618
 
     def test_should_not_allow_to_create_a_position_with_invalid_latitude(self):
-        with pytest.raises(ValueError, match='Latitude should be between -90 and 90') as error:
+        with pytest.raises(ValueError, match='Latitude should be between -90 and 90'):
             Position(Latitude(181), Longitude(100))
 
     def test_should_not_allow_to_create_a_position_with_invalid_longitude(self):
-        with pytest.raises(ValueError, match='Longitude should be between -180 and 180') as error:
+        with pytest.raises(ValueError, match='Longitude should be between -180 and 180'):
             Position(Latitude(90), Longitude(200))
