@@ -23,7 +23,7 @@ poetry run pytest
 ```
 - [ ] Run tests watch
 ```bash
-poetry run pwt
+poetry run ptw
 ```
 
 A part from that, there are a folder with exercises that you can complete in order to master OOP.
