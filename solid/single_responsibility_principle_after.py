@@ -14,7 +14,7 @@ class Book:
         return self.pages[self.current_page]
 
 
-class Console:
+class Raw:
     def output(self, content: str) -> None:
         print(content)
 
@@ -33,7 +33,7 @@ def main():
     )
 
     page = book.current_page_content()
-    Console().output(page)
+    Raw().output(page)
     Html().output(page)
 
 if __name__ == 'main':
